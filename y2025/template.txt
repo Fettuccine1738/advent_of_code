@@ -1,0 +1,33 @@
+#![allow(dead_code, unused_imports)]
+use std::{fs, io};
+
+const SN: &str = "sample.txt";
+const IN: &str = "input.txt";
+
+pub fn read_input() {
+    let input = fs::read_to_string(SN).expect("Could not read file ");
+    println!("{}", input);
+
+    let lines = input.trim().lines();
+
+    let mut count = 0;
+    for mut line in lines {
+        line = line.trim();
+    }
+}
+
+
+fn part_one() -> u32 {
+	let input = read_input();
+	let result = 0u32; 
+	// do something 
+	result 
+}
+
+fn part_two() {
+	todo!();
+}
+
+fn main() {
+    println!("ready.. ");
+}
